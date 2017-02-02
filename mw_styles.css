@@ -4,25 +4,29 @@
    Case Problem 2
 
    Mountain Wheels Text and Color Style
-   Author:
-   Date:
+   Author: Elizabeth St. Pierre
+   Date: 2.1.17
 
-   Filename:         mw_layout.css
-   Supporting Files: none
+   Filename: mw_layout.css
+   Supporting Files: bmtour.html, mw_layout.css
 
 */
 
+/*body styles*/
 body {
   font-family: Tahoma, Geneva, sans-serif;
 }
 
-header#articleheader{
+/*header styles*/
+/*Everything works without "h1" addition except for "font-weight" and "font-size"*/
+header#articleheader h1{
   font-size: 18px;
   font-weight: normal;
   letter-spacing: 7px;
   text-align: center;
 }
 
+/*nav styles*/
 nav ul{
   background-color: rgb(125, 120, 89);
   line-height: 3em;
@@ -40,11 +44,13 @@ nav ul li:hover {
   list-style-image: url(wheelmarker.png);
 }
 
+/*Cannot add to above style rules or the links do not turn white*/
 nav ul li a:hover {
   color: white;
   opacity: 1.0;
 }
 
+/*leftsection styles*/
 #leftsection p{
   font-size: 22px;
 }
@@ -56,9 +62,51 @@ nav ul li a:hover {
   font-variant: small-caps;
 }
 
+/*blockquote styles*/
+/*Only changed the "-Steve H." part of blockquote*/
 blockquote {
   background-color: rgb(131, 121, 36);
   color: white;
   font-size: 16px;
   font-family: "Comic Sans MS", Times, cursive;
+}
+
+/*Adds quotation*/
+blockquote p:before, blockquote p:after{
+  content: '"'
+}
+
+/*Changes rest of text in blockquote*/
+p#block{
+  background-color: rgb(131, 121, 36);
+  color: white;
+  font-size: 16px;
+  font-family: "Comic Sans MS", Times, cursive;
+}
+
+/*rightsection styles*/
+#rightsection h1 {
+  font-size: 22px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  text-align: center;
+}
+
+#rightsection h2 {
+  font-size: 18px;
+  text-align: right;
+  font-weight: normal;
+}
+
+#rightsection p {
+  color: gray;
+  font-size: 14px;
+  text-align: justify;
+}
+
+/*footer styles*/
+footer address {
+  font-size: 16px;
+  text-align: center;
+  font-style: normal;
 }
